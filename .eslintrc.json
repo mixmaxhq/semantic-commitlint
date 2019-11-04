@@ -1,0 +1,6 @@
+{
+  "extends": ["mixmax/node", "mixmax/prettier"],
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}
