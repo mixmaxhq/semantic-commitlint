@@ -7,7 +7,6 @@ coverage/
 *.tmp
 *.tmp.*
 log.txt
-*.sublime-project
 *.sublime-workspace
 
 .idea/
