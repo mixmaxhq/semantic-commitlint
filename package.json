@@ -12,7 +12,7 @@
     "build": "del dist && babel src -d dist",
     "lint": "eslint .",
     "prepublishOnly": "npm run build && if [ \"$CI\" = '' ]; then node -p 'JSON.parse(process.env.npm_package_config_manualPublishMessage)'; exit 1; fi",
-    "semantic-release": "semantic-release",
+    "semantic-release": "npm run build && semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eli Skeggs <eli@mixmax.com> (https://mixmax.com)",
