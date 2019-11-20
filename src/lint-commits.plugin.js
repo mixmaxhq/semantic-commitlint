@@ -1,6 +1,11 @@
 import * as config from '@commitlint/config-conventional';
-import { format, lint, load } from '@commitlint/core';
+import * as commitlint from '@commitlint/core';
 import SemanticReleaseError from '@semantic-release/error';
+
+import interopRequireDefault from '@babel/runtime/helpers/interopRequireDefault';
+const format = interopRequireDefault(commitlint.format).default,
+  lint = interopRequireDefault(commitlint.lint).default,
+  load = interopRequireDefault(commitlint.load).default;
 
 export async function verifyRelease(repoData, options) {
   return validateCommits(options);
