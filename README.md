@@ -55,7 +55,9 @@ If there are unreleased commits that shouldn't fail a build, then add them to th
 uncommon, provided your development workflow lints the commits before they get added to the release
 branch.
 
-```json
+```jsonc
+// This is the package.json of the package you're trying to publish.
+// Just add the SEMANTIC_COMMITLINT_SKIP prefix to the semantic-release command!
 {
   "scripts": {
     "semantic-release": "SEMANTIC_COMMITLINT_SKIP=a1be371 semantic-release"
