@@ -1,6 +1,6 @@
 {
   "name": "@mixmaxhq/semantic-commitlint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fills the gap between semantic-release and commitlint",
   "main": "./dist/lint-commits.plugin.js",
   "files": [

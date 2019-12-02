@@ -1,3 +1,10 @@
+### [1.0.3](https://github.com/mixmaxhq/semantic-commitlint/compare/v1.0.2...v1.0.3) (2019-12-02)
+
+
+### Bug Fixes
+
+* fix commit validation logging ([e377b7d](https://github.com/mixmaxhq/semantic-commitlint/commit/e377b7dca1ecf8396a825e1dd62a52fc01607cc4))
+
 ### [1.0.2](https://github.com/mixmaxhq/semantic-commitlint/compare/v1.0.1...v1.0.2) (2019-11-20)
 
 
