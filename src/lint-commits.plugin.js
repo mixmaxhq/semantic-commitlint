@@ -35,8 +35,8 @@ async function validateCommit(commitMeta, opts, logger) {
     const detail = commitMeta.commit.short ? ` ${commitMeta.commit.short}` : '';
     logger.error(`😞   Errors found with commit${detail}`);
     logger.error(`💬   ${commitMeta.message}`);
-    const formatted = format({ errors: report.errors });
-    formatted.forEach((item) => logger.log(item));
+    const formatted = format({ results: [report] });
+    logger.log(formatted);
     throw new SemanticReleaseError(
       `The commit message is not formatted correctly`,
       'EINVALIDCOMMIT'
